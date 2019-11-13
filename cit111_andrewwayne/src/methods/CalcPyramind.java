@@ -19,6 +19,7 @@ public class CalcPyramind {
         double height = user.nextDouble();
         
         double volume = volumeofSquare(base,height);
+        volume =Math.round(volume);
         System.out.println("***********");
         System.out.println("The volume of our square pyramid is: "+ volume);
         System.out.println("***********");
@@ -27,7 +28,9 @@ public class CalcPyramind {
     }//end main
     public static double volumeofSquare(double b, double h){
       final double ONETHIRD = 1f/3f;
+        System.out.println("Output ONETHIRD "+ONETHIRD);
         double square=(b*b)*h*ONETHIRD;
+        System.out.println("value of square "+square);
      return square;
     }//end volume
 }//end class
